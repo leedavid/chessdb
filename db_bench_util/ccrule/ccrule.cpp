@@ -43,7 +43,7 @@ ZEND_GET_MODULE(ccrule)
 
 PHP_MINIT_FUNCTION(ccrule)
 {
-	init();
+	//init();
 	return SUCCESS;
 }
 
