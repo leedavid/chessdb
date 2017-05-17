@@ -1,0 +1,6 @@
+ARG_ENABLE("ccrule", "CCRule Support", "no");
+
+if (PHP_CCRULE == "yes") {
+	EXTENSION("ccrule", "ccrule.cpp");
+	AC_DEFINE('HAVE_CCRULE', 1, 'Have CCRule support', false);
+}

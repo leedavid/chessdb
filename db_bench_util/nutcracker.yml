@@ -1,0 +1,12 @@
+chessdb:
+  listen: 127.0.0.1:8888
+  hash: fnv1a_64
+  distribution: ketama
+  redis: true
+  preconnect: true
+  server_connections: 4
+  servers:
+    - 127.0.0.1:16001:1 ssdb1
+    - 127.0.0.1:16002:1 ssdb2
+    - 127.0.0.1:16003:1 ssdb3
+    - 127.0.0.1:16004:1 ssdb4
